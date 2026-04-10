@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /images/brick-texture.png
+Disallow: /images/stone-texture.png
+
+Sitemap: https://propaversllc.com/sitemap.xml
