@@ -1258,47 +1258,6 @@
 </head>
 <body>
 
-  <!-- ========== DEV WARNING MARQUEE BANNER ========== -->
-  <style>
-    @keyframes devWarningScroll {
-      0%   { transform: translateX(100%); }
-      100% { transform: translateX(-100%); }
-    }
-    .dev-warning-banner {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 99999;
-      background-color: #000;
-      border-bottom: 4px solid #ff0000;
-      overflow: hidden;
-      padding: 14px 0;
-      box-shadow: 0 4px 20px rgba(255, 0, 0, 0.6);
-    }
-    .dev-warning-track {
-      display: inline-block;
-      white-space: nowrap;
-      animation: devWarningScroll 35s linear infinite;
-      font-size: 2rem;
-      font-weight: 900;
-      color: #ff0000;
-      text-shadow: 0 0 8px rgba(255, 0, 0, 0.7);
-      letter-spacing: 1px;
-      font-family: Arial, sans-serif;
-    }
-    body { padding-top: 70px !important; }
-    @media (max-width: 768px) {
-      .dev-warning-track { font-size: 1.2rem; }
-      body { padding-top: 50px !important; }
-    }
-  </style>
-  <div class="dev-warning-banner" role="alert" aria-live="assertive">
-    <div class="dev-warning-track">
-      <span>&#9888;&#65039; ESTA APLICACION NECESITA URGENTE UN HOSTING Y DOMINIO PARA MAYOR SEGURIDAD - CONTACTESE CON EL DESARROLLADOR &#9888;&#65039;</span>
-    </div>
-  </div>
-
   <!-- Skip to content (accessibility) -->
   <a href="#hero" class="sr-only" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
 
