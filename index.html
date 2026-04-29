@@ -1070,6 +1070,58 @@
       font-size: 0.8rem;
       color: var(--gray);
     }
+    .footer-krea {
+      margin-top: 22px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      letter-spacing: 0.4px;
+      color: var(--gray);
+      flex-wrap: wrap;
+    }
+    .krea-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 700;
+      position: relative;
+      background: linear-gradient(135deg, var(--green) 0%, var(--gold) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: filter 0.3s ease;
+      letter-spacing: 0.6px;
+    }
+    .krea-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, var(--green), var(--gold));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.35s ease;
+    }
+    .krea-link:hover::after {
+      transform: scaleX(1);
+    }
+    .krea-link:hover {
+      filter: drop-shadow(0 0 8px rgba(46, 204, 64, 0.45));
+    }
+    .krea-arrow {
+      display: inline-block;
+      transition: transform 0.3s ease;
+      font-weight: 800;
+    }
+    .krea-link:hover .krea-arrow {
+      transform: translate(3px, -3px);
+    }
 
     /* ========== SCROLL TO TOP ========== */
     .scroll-top {
@@ -1600,6 +1652,13 @@
         <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
       </div>
       <p class="footer-copy">&copy; 2026 Pro Pavers LLC. All rights reserved. | 26225 108th Ave SE, Kent, WA 98030 | (425) 528-3183</p>
+      <div class="footer-krea">
+        <span data-en="Crafted with care by" data-es="Creado con dedicación por">Crafted with care by</span>
+        <a href="https://www.krealabs.tech/" target="_blank" rel="noopener noreferrer" class="krea-link" aria-label="Visit Krealabs">
+          <span class="krea-name">Krealabs</span>
+          <span class="krea-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
     </div>
   </footer>
 
